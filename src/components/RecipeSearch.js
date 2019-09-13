@@ -7,11 +7,12 @@ export default class RecipeSearch extends Component {
       <React.Fragment>
         <div className="container">
           <div className="row">
-            <div className="col-10 mx-auto col-md-8 mt-5 text-center">
+            <div className="col-12 mx-auto col-md-12 mt-5 text-center">
               <h1 className="text-slanted text-capitalize">
                 search for recipe with{" "}
-                <strong className="text-danger">Sarthak Food Blog</strong>
+                <strong className="text-danger">React Recipe Search App</strong>
               </h1>
+              <h4>developed by - Sarthak Agarwal</h4>
               <form className="mt-4" onSubmit={handleSubmit}>
                 <label htmlFor="search" className="text-capitalize">
                   type recipes seperated by comma

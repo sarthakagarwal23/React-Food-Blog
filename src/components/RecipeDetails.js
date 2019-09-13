@@ -1,31 +1,13 @@
 import React, { Component } from "react";
 import { recipe } from "../tempDetails";
 export default class RecipeDetails extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {
-  //     recipe: recipe,
-  //     url: `https://www.food2fork.com/api/get?key=b6fb5d86fb9419eeec1129a9e77a1ada&rId=${
-  //       this.props.id
-  //     }`
-  //   };
-  // }
-  // async componentDidMount() {
-  //   try {
-  //     const data = await fetch(this.state.url);
-  //     const jsonData = await data.json();
-  //     this.setState({
-  //       recipe: jsonData.recipe
-  //     });
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
+ 
   state = {
     recipe: {}
   };
+  
   async componentDidMount() {
+    // const REACT_APP_API_KEY = "fae785d4a7564d06e02f0bab2f60e187";
     const id = this.props.id;
     const url = `https://www.food2fork.com/api/get?key=${
       process.env.REACT_APP_API_KEY

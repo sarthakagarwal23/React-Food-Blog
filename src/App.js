@@ -7,17 +7,18 @@ import RecipeDetails from "./components/RecipeDetails";
 class App extends Component {
   state = {
     recipes: recipes,
-    url: `https://www.food2fork.com/api/search?key=${
-      process.env.REACT_APP_API_KEY
-    }`,
-    base_url: `https://www.food2fork.com/api/search?key=${
-      process.env.REACT_APP_API_KEY
-    }`,
-    details_id: 35389,
-    pageIndex: 1,
-    search: "",
-    query: "&q=",
-    error: ""
+    url:"https://www.food2fork.com/api/search?key=fae785d4a7564d06e02f0bab2f60e187"
+    // url: `https://www.food2fork.com/api/search?key=${
+    //   process.env.REACT_APP_API_KEY
+    // }`,
+    // base_url: `https://www.food2fork.com/api/search?key=${
+    //   process.env.REACT_APP_API_KEY
+    // }`,
+    // details_id: 3538s9,
+    // pageIndex: 1,
+    // search: "",
+    // query: "&q=",
+    // error: ""
   };
 
   async getRecipes() {
